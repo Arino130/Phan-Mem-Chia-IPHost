@@ -1,0 +1,26 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Diagnostics;
+using System.Linq;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace Phần_mềm_chia_Host
+{
+    static class Program
+    {
+        /// <summary>
+        /// The main entry point for the application.
+        /// </summary>
+        [STAThread]
+        static void Main()
+        {
+            //Application.EnableVisualStyles();
+            //Application.SetCompatibleTextRenderingDefault(false);
+            Application.Run(new Manager());
+            
+            //MessageBox.Show(iP_Host1.toStringIP()+"/"+ iP_Host1.getSubnetMaskNumber());
+            //MessageBox.Show(iP_Host1.toStringMask());
+        }
+    }
+}
